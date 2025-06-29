@@ -1,4 +1,13 @@
-<script>
-  sessionStorage.redirect = location.href;
-  location.replace("/games/");
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Save the current path and redirect to root
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      location.replace("/Educhess/");
+    </script>
+  </head>
+  <body></body>
+</html>
